@@ -19,7 +19,7 @@ def sleep():
 
 
 def cancel_shutdown():
-    # Функция, вызываемая при нажатии кнопки "sd Cancel"
+    # Функция, вызываемая при нажатии кнопки "Cancel"
     os.system("shutdown -a") # Вызываем команду отмены shutdown
 
 # Создание главного окна tkinter
@@ -38,7 +38,7 @@ shutdown_button.pack()
 shutdown_button = tk.Button(window, text="Sleep", command=sleep)
 shutdown_button.pack()
 
-# Создание кнопки "sd Cancel"
+# Создание кнопки "Cancel"
 cancel_button = tk.Button(window, text="Cancel", command=cancel_shutdown)
 cancel_button.pack()
 
